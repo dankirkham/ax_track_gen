@@ -1,5 +1,4 @@
-# Creating A Course Using A Map
-1. Create a JSON file similar to the following:
+## JSON Sample
 ```
 {
     "metersPerPixel": 0.45491,
@@ -19,7 +18,9 @@
 }
 
 ```
-1. Using an image, populate the "cones" array with a list of cones [x, y] pixel coordinates.
+
+## Creating A Course Using A Map
+1. Using an image, populate the "cones" array of a JSON file (see above) with a list of cones [x, y] pixel coordinates.
 2. Populate "start" and "finish" with left and right location of lines.
 3. Using a tool such as Google Map's Measure Distance feature, determine the metersPerPixel. This can be done by finding pixels between light poles and the corresponding distance.
 4. Invoke the tool using `python ax_track_gen.py <json file> -o default.clf`.
